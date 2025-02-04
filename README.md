@@ -1,88 +1,52 @@
-**Predicting Diabetic Outcomes**
+# Model Selection and Evaluation in Predicting Diabetic Outcomes
 
-This project aims to uncover patterns and insights related to diabetes. By examining relationships
-between various contributing factors—such as genetics, BMI, and other relevant features—we seek
-to better understand the underlying causes of diabetes and the interactions among these variables.
+## Project Overview
+This README details my (Latifah J.'s) contributions to the "Predicting Diabetic Outcomes" project. My role was centered around the selection and evaluation of various supervised learning models to better predict diabetes outcomes using key features like BMI, Weight in Kilograms, and previous health conditions.
 
+## Objectives
+- Compare and evaluate the performance of different supervised learning models.
+- Provide insights into model performance based on advanced visual analytics.
 
-**Table of Contents**
+## Files
+- `Diabetes_Outcomes_Modeling.ipynb`: Jupyter notebook containing all the model training, comparison, and evaluation code.
+- `Correlation Heatmap.png`: Visualization of feature correlations.
+- `ROC Curve Comparison.png`: ROC curve analysis of model performance.
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Data Sources](#data sources)
+## Installation and Setup
+```bash
+# Clone the repository
+git clone https://github.com/HanaDoubleU/predicting-diabetic-outcomes
 
+# Navigate into the project directory
+cd project4-group9
 
-**Installation**
+# Install required Python libraries
+pip install pandas seaborn matplotlib scikit-learn
 
-***How to install project***
+## Model Selection and Insights
 
-1. Clone the repository.
-    ```bash
-    git clone https://github.com/HanaDoubleU/predicting-diabetic-outcomes
-    ```
-2. Navigate into the project directory.
-    ```bash
-    cd project4-group9
-    ```
-3. Install dependencies.
-    ```bash
-    pip install pandas
-    pip install seaborn
-    pip install matplotlib
-    pip install scikit-learn
-    ```
-**Contributing**
+### Models Evaluated
+- **Random Forest Classifier**
+- **Logistic Regression**
 
-**Everybody**
+### Approach
+- **Model Evaluation**: Employed metrics like AUC, accuracy, precision, recall, and F1 score for thorough comparison.
+- **Visual Analysis**: Analyzed underlying data patterns and correlations through extensive visualizations, such as the correlation heatmap and ROC curves, to understand feature impacts and model efficacy.
 
-***Ideation***
-Brainstorm project ideas
-Clean and preprocess the original dataset
+## Key Visualizations and Their Insights
 
-**Floris C**
+### Correlation Heatmap
+- **Purpose**: To identify multicollinearity and the strength of the relationships between features like BMI, Weight, and their correlation with diabetic outcomes.
+- **Insight**: Noted high correlation between BMI and Weight in Kilograms, suggesting potential issues with multicollinearity that could influence model predictions.
 
-***Logistic Regression Analysis***
-Perform EDA and analysis for Logistic Regression, focusing on BMI and WeightInKilograms
-***Summarizing Data and Generating Statistics***
-Summarize and analyze key statistics from the dataset
-***Visualization***
-Visualize and analyze features such as HadDiabetes, BMI, and WeightInKilograms
+### ROC Curve Comparison
+- **Purpose**: To compare the true positive rate and false positive rate of Logistic Regression and Random Forest Classifier.
+- **Insight**: Both models performed comparably, with Logistic Regression slightly edging out due to better interpretability and simplicity, which is crucial for clinical settings.
 
-**Latifah J.**
+## Conclusion
+My contributions to this project have provided a deeper understanding of how different models perform in predicting diabetic outcomes and the importance of feature selection and model interpretability in healthcare applications. This experience has enhanced my skills in model evaluation and data visualization, critical for data-driven decision-making in medical fields.
 
-***Model Selection***
-Compare supervised learning models (eg. Random Forest Classifier and Logistic Regression) and evaluate their performance.
-
-**Agustín R.**
-
-***Data Preprocessing***
-Standardize data (StandardScaler, MinMaxScaler) and apply techniques like OneHotEncoding for GeneralHealth
-***Data Balancing***
-Ensure balanced target classes using oversampling or undersampling
-
-**Jessica V.**
-
-***Feature-Based Models***
-Develop Random Forest Classifier using all features and evaluate performance using appropriate metrics
-
-**Hana W.**
-
-***Model Testing***
-Analyze Random Forest Classifier and feature importances
-
-**Documentation and Presentation**
-
-**Jessica V.**
-
-***README Documentation***
-Create comprehensive project documentation
-
-**Everybody**
-
-***Slides***
-Create navigable and digestible slides and know the audience
-
-**Data Sources**
-https://www.kaggle.com/datasets/tarekmuhammed/patients-data-for-medical-field 
+## Tools and Resources Used
+- **Python Libraries**: Pandas, Seaborn, Matplotlib, Scikit-Learn
+- **Jupyter Notebook**: For interactive development and testing
+- **Git**: For version control
